@@ -20,6 +20,12 @@ For now, manual installation, you need your own hosting or local web server.
 2. Open file `msx/start.json` and replace the content `{domain}` to your domain or IP
 3. Open MSX and install
 
+## Web Demo
+
+[Heroku](https://lampa-en.herokuapp.com/) - Media Station X: lampa-en.herokuapp.com
+
+[000webhost](https://lampa-en.000webhostapp.com/) - Media Station X: lampa-en.000webhostapp.com
+
 ## Pack for WebOS
 
 Added **appinfo.json** for WebOS. Use to get IPK:

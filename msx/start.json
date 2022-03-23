@@ -3,10 +3,10 @@
   "headline": "Application Downloader",
   "extension": "Version MSX: 1.0.0",
   "version": "1.0.0",
-  "parameter": "content:https://{domain}",
+  "parameter": "content:https://{domain}/msx/start.json",
   "note": "For this service, Media Station X 0.1.120 or higher is needed",
   "action": "[settings:validate_links:0|home]",
-  "dictionary": "https://{domain}",
+  "dictionary": "https://{domain}/msx/lang/en.json",
   "pages": [
     {
       "items": [
