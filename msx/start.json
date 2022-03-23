@@ -3,10 +3,10 @@
   "headline": "Application Downloader",
   "extension": "Version MSX: 1.0.0",
   "version": "1.0.0",
-  "parameter": "content:http://{domain}/msx/start.json",
+  "parameter": "content:https://{domain}",
   "note": "For this service, Media Station X 0.1.120 or higher is needed",
   "action": "[settings:validate_links:0|home]",
-  "dictionary": "http://{domain}/msx/lang/en.json",
+  "dictionary": "https://{domain}",
   "pages": [
     {
       "items": [
@@ -19,9 +19,9 @@
         {
           "type": "control",
           "layout": "0,0,5,1",
-          "image": "http://{domain}/msx-logo.png",
+          "image": "https://{domain}/msx-logo.png",
           "label": "Lampa",
-          "action": "link:http://{domain}",
+          "action": "link:https://{domain}",
           "selection": {
             "important": true,
             "action": "update:content:description",
@@ -35,65 +35,16 @@
         {
           "type": "control",
           "layout": "0,1,5,1",
-          "image": "http://msx.benzac.de/img/icon_raw.png",
-          "label": "FXMLPlayer",
-          "action": "execute:http://msxplayer.ru/msx/get-start-action",
+          "image": "https://developers.google.com/site-assets/logo-youtube.svg",
+          "label": "Youtube",
+          "action": "link:https://www.youtube.com/tv",
           "selection": {
             "important": true,
             "action": "update:content:description",
             "data": {
               "text": [
-                "{txt:msx-white: FXMLPlayer} is a program for convenient viewing of TV, movies, TV shows and more.{br}",
-                "{ico:msx-green:add-circle} Support {txt:msx-white:best} XML portals {txt:msx-white: RFork Online, KinoPub, CoolTV, KinoBoom} {br}",
-				"{ico:msx-green:add-circle} The ability to download movies and TV shows from the HDVideoBox, LazyMedia Deluxe{br}{br} application",
-                "{ico:info}This version loads the updated version of Media Station X from the Internet, since the FXMLPlayer playlist requires a version of Media Station X at least version {txt:msx-white:0.1.120}{br}"
+                "{txt:msx-white: Youtube} - All you can't watch."
               ]
-            }
-          }
-        },
-        {
-          "type": "control",
-          "layout": "0,2,5,1",
-          "image": "http://static.tempdata.forkplayer.tv/staticfiles/fimg/forkicon.png",
-          "label": "ForkPlayer",
-          "action": "link:http://msx.lnka.ru/msx/distributive_forkplayer",
-          "selection": {
-            "important": true,
-            "action": "update:content:description",
-            "data": {
-              "text": [
-                "{txt:msx-white: ForkPlayer} is an application software for viewing fxml(Fork eXtensible Markup Language) pages on the global network. ForkPlayer is used for requesting, processing, manipulating and displaying the content of fxml sites, as well as for directly viewing the content of playlist files (m3u,xml,xspf), images (gif, jpeg, png), audio-video formats (mp3, mpeg, mkv), streaming video (udp, hls)."
-              ]
-            }
-          }
-        },
-        {
-          "type": "control",
-          "layout": "0,3,5,1",
-          "image": "http://ott-play.com/android-chrome-192x192.png",
-          "label": "OTT-Play",
-          "action": "link:http://ott-play.com/f/",
-          "selection": {
-            "important": true,
-            "action": "update:content:description",
-            "data": {
-              "text": [
-                "{txt:msx-white: OTT-Play} is a multiplatform IPTV player available on televisions, set-top boxes and mobile devices."
-              ]
-            }
-          }
-        },
-        {
-          "type": "control",
-          "layout": "0,4,5,1",
-          "image": "https://ottplayer.es/public/images/logo_temp.svg",
-          "label": "OTTplayer",
-          "action": "link:http://widget.ottplayer.es",
-          "selection": {
-            "important": true,
-            "action": "update:content:description",
-            "data": {
-              "text": ["{txt:msx-white: OTTplayer} is a service that allows you to put all your IP TV into one playlist, adjust the order of channels, get an electronic TV guide."]
             }
           }
         }
