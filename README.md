@@ -28,8 +28,6 @@ There are two links which you can use to try this Lampa version using web browse
 
 [Heroku](https://lampa-en.herokuapp.com/) - Media Station X: lampa-en.herokuapp.com
 
-[000webhost](https://lampa-en.000webhostapp.com/) - Media Station X: lampa-en.000webhostapp.com
-
 ## Pack for WebOS
 
 Added **appinfo.json** for WebOS. Use to get IPK:
