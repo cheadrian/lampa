@@ -2,6 +2,8 @@
 
 **Auto-translated README.md**
 
+Update: Partially fixed translation for README.md and Lampa manually.
+
 The application is completely free and uses public links to view information about movies, new releases, popular movies, etc. All available information is used solely for educational purposes, the application does not use its own servers to distribute information.
 
 Lamp sources are available here: <https://github.com/yumata/lampa-source>
@@ -16,11 +18,13 @@ Lamp sources are available here: <https://github.com/yumata/lampa-source>
 
 For now, manual installation, you need your own hosting or local web server.
 
-1. Immediately click on the green button (Code) and select (Download ZIP) upload the files to the hosting or web server.
-2. Open file `msx/start.json` and replace the content `{domain}` to your domain or IP
-3. Open MSX and install
+1. Immediately click on the (Github) green (blue) button (Code) and select (Download ZIP) then upload the files to the hosting or web server.
+2. Open file `msx/start.json` and replace the content of `{domain}` to your domain or IP
+3. Open MSX and install Lampa using your domain or IP
 
 ## Web Demo
+
+There are two links which you can use to try this Lampa version using web browser or MSX.
 
 [Heroku](https://lampa-en.herokuapp.com/) - Media Station X: lampa-en.herokuapp.com
 
