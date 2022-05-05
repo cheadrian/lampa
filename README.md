@@ -1,9 +1,15 @@
+
+
 # Lampa
 
-**Auto-translated README.md**
+## Changelog
 
-Update: Partially fixed translation for README.md and Lampa manually.
+* V2: Based on 1.3.9, compiled from source with translation support using i18next [lampa-source](https://github.com/cheadrian/lampa-source).
+* V1: Based on 1.3.7, manually translated already compiled Lampa.
 
+## Description
+
+**Translated README.md**
 The application is completely free and uses public links to view information about movies, new releases, popular movies, etc. All available information is used solely for educational purposes, the application does not use its own servers to distribute information.
 
 Lamp sources are available here: <https://github.com/yumata/lampa-source>
@@ -28,6 +34,8 @@ There are two links which you can use to try this Lampa version using web browse
 
 [Heroku](https://lampa-en.herokuapp.com/) - Media Station X: lampa-en.herokuapp.com
 
+
+
 ## Pack for WebOS
 
 Added **appinfo.json** for WebOS. Use to get IPK:
@@ -42,9 +50,14 @@ You might want to [root your WebOS / LG TV](https://rootmy.tv/) before. More det
 
 ## Translate
 
+Update: After 1.3.9 translation is done using i18next on client-side. You can switch between languages.
+
+<details>
+  <summary>Deprecated after V2: Manual translation method for compiled Lampa</summary>
 You might want to manually fix translation as quality isn't nearly great but understandable enough.
 
 Also, there will be some unfixed bugs, but should be usable overall.
+
 
 ### Using Visual Studio Code install
 
@@ -92,3 +105,4 @@ Find **keyboard** and replace 'default' to 'ru' then 'en' to 'default'.
     CTRL + SHIFT + P -> Translate
 
 Translate index.html like so.
+</details>
