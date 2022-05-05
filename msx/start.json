@@ -1,0 +1,54 @@
+{
+  "name": "Application Loader",
+  "headline": "Application Downloader",
+  "extension": "Version MSX: 1.0.0",
+  "version": "1.0.0",
+  "parameter": "content:https://{domain}/msx/start.json",
+  "note": "For this service, Media Station X 0.1.120 or higher is needed",
+  "action": "[settings:validate_links:0|home]",
+  "dictionary": "https://{domain}/msx/lang/en.json",
+  "pages": [
+    {
+      "items": [
+        {
+          "id": "description",
+          "type": "space",
+          "layout": "5,0,5,5",
+          "text": ""
+        },
+        {
+          "type": "control",
+          "layout": "0,0,5,1",
+          "image": "https://{domain}/msx-logo.png",
+          "label": "Lampa",
+          "action": "link:http://{domain}",
+          "selection": {
+            "important": true,
+            "action": "update:content:description",
+            "data": {
+              "text": [
+                "{txt:msx-white: Lampa} - Viewing popular movies, new products, top, etc."
+              ]
+            }
+          }
+        },
+        {
+          "type": "control",
+          "layout": "0,1,5,1",
+          "image": "https://developers.google.com/site-assets/logo-youtube.svg",
+          "label": "Youtube",
+          "action": "link:https://www.youtube.com/tv",
+          "selection": {
+            "important": true,
+            "action": "update:content:description",
+            "data": {
+              "text": [
+                "{txt:msx-white: Youtube} - All you can't watch."
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

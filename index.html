@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampa</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1d1f20">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#1d1f20">
+
+    <meta name="referrer" content="never">
+
+    <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="./vender/keypad/style.css">
+
+    <link rel="stylesheet" href="css/app.css">
+    <!--<<link rel="stylesheet" href="http://yumata.github.io/lampa/css/app.css">-->
+</head>
+<body>
+    <select name="language" style="display:none;" id="languageSwitcher"></select>
+
+    <div class="welcome"></div>
+
+    <div id="app">
+
+    </div>
+    
+    <div class="no-network hide">
+        <div class="no-network__title">Error</div>
+        <div class="no-network__desc">Failed to upload file:<span class="no-network__file"></span></div>
+    </div>
+    
+    <script src="./webos/webOSTV.js"></script>
+    <script src="./vender/jquery/jquery.js"></script>
+    <script src="./vender/notify/notify.js"></script>
+    <script src="./vender/scrollbar/jquery.scrollbar.js"></script>
+    <script src="./vender/navigator/navigator.js"></script>
+    <script src="./vender/keypad/keypad.js"></script>
+    <script src="./vender/i18next/i18next.min.js"></script>
+    <script src="./vender/i18next/jquery-i18next.min.js"></script>
+	<script src="./vender/i18next/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="./vender/i18next/i18n_init.js"></script>
+    <script src="http://www.youtube.com/iframe_api" async></script>
+
+
+</body>
+</html>
