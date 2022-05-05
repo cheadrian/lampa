@@ -21,7 +21,7 @@
           "layout": "0,0,5,1",
           "image": "https://{domain}/msx-logo.png",
           "label": "Lampa",
-          "action": "link:https://{domain}",
+          "action": "link:http://{domain}",
           "selection": {
             "important": true,
             "action": "update:content:description",

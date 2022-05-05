@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,21 +17,24 @@
     <meta name="theme-color" content="#1d1f20">
 
     <meta name="referrer" content="never">
-    
+
     <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" href="./vender/keypad/style.css">
 
-    <link rel="stylesheet" href="css/app.css?v=1.75">
+    <link rel="stylesheet" href="css/app.css">
+    <!--<<link rel="stylesheet" href="http://yumata.github.io/lampa/css/app.css">-->
 </head>
 <body>
+    <select name="language" style="display:none;" id="languageSwitcher"></select>
+
     <div class="welcome"></div>
 
     <div id="app">
 
     </div>
-
+    
     <div class="no-network hide">
-        <div class="no-network__title">Mistake</div>
+        <div class="no-network__title">Error</div>
         <div class="no-network__desc">Failed to upload file:<span class="no-network__file"></span></div>
     </div>
     
@@ -40,51 +44,13 @@
     <script src="./vender/scrollbar/jquery.scrollbar.js"></script>
     <script src="./vender/navigator/navigator.js"></script>
     <script src="./vender/keypad/keypad.js"></script>
+    <script src="./vender/i18next/i18next.min.js"></script>
+    <script src="./vender/i18next/jquery-i18next.min.js"></script>
+    <script src="./vender/i18next/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="./vender/i18next/i18nextHttpBackend.min.js"></script>
+    <script src="./vender/i18next/i18n_init.js"></script>
     <script src="http://www.youtube.com/iframe_api" async></script>
 
-    <script>
-    function putScript(scripts){
-        var add = function(src){
-            console.log('Loader', 'try-load-script', src)
 
-            var trys = 0;
-
-            var sreateScript = function(){
-                var script = document.createElement('script');
-
-                script.type = 'text/javascript';
-
-                script.onload = script.onreadystatechange = function() {
-                    console.log('Loader', 'Script loaded');
-                };
-
-                script.onerror = function(){
-                    trys++;
-
-                    console.log('Loader', 'error-load-script', src)
-
-                    if(trys < 3){
-                        sreateScript();
-                    }
-                    else{
-                        $('.no-network').removeClass('hide')
-
-                        $('.no-network__file').text(window.location.href + '/' + src)
-                    }
-                }
-
-                script.src = src;
-
-                document.getElementsByTagName('body')[0].appendChild(script);
-            }
-
-            sreateScript();
-        }
-
-        add(scripts);
-    }
-
-    putScript('app.min.js?v=' + Math.random());
-    </script>
 </body>
 </html>

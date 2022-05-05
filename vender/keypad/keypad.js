@@ -463,7 +463,7 @@
                         getCaretPosition: this.getCaretPosition,
                         getCaretPositionEnd: this.getCaretPositionEnd,
                         dispatch: this.dispatch
-                    }), this.caretPosition = null, this.caretPositionEnd = null, this.keyboardDOM = a, this.options = l, this.options.layoutName = this.options.layoutName || "default", this.options.theme = this.options.theme || "hg-theme-default", this.options.inputName = this.options.inputName || "default", this.options.preventMouseDownDefault = this.options.preventMouseDownDefault || !1, this.keyboardPluginClasses = "", r.bindMethods(SimpleKeyboard, this), this.input = {}, this.input[this.options.inputName] = "", this.keyboardDOMClass = s, this.buttonElements = {}, window.SimpleKeyboardInstances || (window.SimpleKeyboardInstances = {}), this.currentInstanceName = this.utilities.camelCase(this.keyboardDOMClass), window.SimpleKeyboardInstances[this.currentInstanceName] = this, this.allKeyboardInstances = window.SimpleKeyboardInstances, this.keyboardInstanceNames = Object.keys(window.SimpleKeyboardInstances), this.isFirstKeyboardInstance = this.keyboardInstanceNames[0] === this.currentInstanceName, this.physicalKeyboard = new u({
+                    }), this.caretPosition = null, this.caretPositionEnd = null, this.keyboardDOM = a, this.options = l, this.options.layoutName = this.options.layoutName || i18next.language === 'en' ? "en" :"default", this.options.theme = this.options.theme || "hg-theme-default", this.options.inputName = this.options.inputName || "default", this.options.preventMouseDownDefault = this.options.preventMouseDownDefault || !1, this.keyboardPluginClasses = "", r.bindMethods(SimpleKeyboard, this), this.input = {}, this.input[this.options.inputName] = "", this.keyboardDOMClass = s, this.buttonElements = {}, window.SimpleKeyboardInstances || (window.SimpleKeyboardInstances = {}), this.currentInstanceName = this.utilities.camelCase(this.keyboardDOMClass), window.SimpleKeyboardInstances[this.currentInstanceName] = this, this.allKeyboardInstances = window.SimpleKeyboardInstances, this.keyboardInstanceNames = Object.keys(window.SimpleKeyboardInstances), this.isFirstKeyboardInstance = this.keyboardInstanceNames[0] === this.currentInstanceName, this.physicalKeyboard = new u({
                         dispatch: this.dispatch,
                         getOptions: this.getOptions
                     }), !this.keyboardDOM) throw console.warn('".'.concat(s, '" was not found in the DOM.')), new Error("KEYBOARD_DOM_ERROR");
@@ -881,4 +881,3 @@
         e.default = c
     }])
 }));
-//# sourceMappingURL=index.js.map

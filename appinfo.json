@@ -1,14 +1,14 @@
 {
 	"icon": "icons/icon.png",
 	"main": "index.html",
-	"requiredMemory": 20,
+	"requiredMemory": 64,
 	"title": "Lampa",
 	"type": "web",
 	"requiredPermissions": [
 		"time",
 		"media"
 	],
-	"version": "1.3.7",
+	"version": "1.3.9",
 	"splashBackground": "img/welcome.jpg",
 	"networkStableTimeout": 1,
 	"permissions": "all",
