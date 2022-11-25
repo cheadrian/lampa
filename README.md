@@ -1,4 +1,5 @@
-
+# Archived
+Language picker was added in the upstream.
 
 # Lampa
 
